@@ -1,0 +1,25 @@
+[root@daveti darp]# ./darp -a
+vl-198-gw.uoregon.edu (184.171.60.1) at 00:00:5e:00:01:01 [ether] on em1
+dyn-184-171-61-38.uoregon.edu (184.171.61.38) at ec:1a:59:8a:57:96 [ether] on em1
+vl-198.uonet3-gw.uoregon.edu (184.171.60.2) at 00:d0:01:7a:28:00 [ether] on em1
+[root@daveti darp]# ./darp -g 184.171.61.38
+MAC: ec:1a:59:8a:57:96
+[root@daveti darp]# ./darp -s 255.255.255.255 00:ff:00:ff:00:ff
+[root@daveti darp]# ./darp -a
+vl-198-gw.uoregon.edu (184.171.60.1) at 00:00:5e:00:01:01 [ether] on em1
+dyn-184-171-61-38.uoregon.edu (184.171.61.38) at ec:1a:59:8a:57:96 [ether] on em1
+vl-198.uonet3-gw.uoregon.edu (184.171.60.2) at 00:d0:01:7a:28:00 [ether] on em1
+255.255.255.255 (255.255.255.255) at 00:ff:00:ff:00:ff [ether] on em1
+[root@daveti darp]# ./darp -d 255.255.255.255
+[root@daveti darp]# ./darp -a
+vl-198-gw.uoregon.edu (184.171.60.1) at 00:00:5e:00:01:01 [ether] on em1
+dyn-184-171-61-38.uoregon.edu (184.171.61.38) at ec:1a:59:8a:57:96 [ether] on em1
+vl-198.uonet3-gw.uoregon.edu (184.171.60.2) at 00:d0:01:7a:28:00 [ether] on em1
+255.255.255.255 (255.255.255.255) at <incomplete> on em1
+[root@daveti darp]# arp -a
+vl-198-gw.uoregon.edu (184.171.60.1) at 00:00:5e:00:01:01 [ether] on em1
+dyn-184-171-61-38.uoregon.edu (184.171.61.38) at ec:1a:59:8a:57:96 [ether] on em1
+vl-198.uonet3-gw.uoregon.edu (184.171.60.2) at 00:d0:01:7a:28:00 [ether] on em1
+? (255.255.255.255) at <incomplete> on em1
+[root@daveti darp]#
+
